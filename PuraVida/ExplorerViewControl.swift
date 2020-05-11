@@ -17,7 +17,6 @@ class ExplorerViewController: UIViewController {
         explorerTableV.delegate = self
         explorerTableV.dataSource = self
     }
-    
 }
 
 extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
@@ -26,12 +25,18 @@ extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
         
         let celloc = explorerTableV.dequeueReusableCell(withIdentifier: GlobalStatics.universalCelloIdentifier, for: indexPath) as! ExplorerTviCell
         
+        celloc.actionDelegate = self
         explorerTableV.rowHeight = 233
 
         celloc.tvicImageView.image = UIImage(named: placesPhotographsArrayLeft[indexPath.row])
         celloc.tvicRabel.text = placesNamesArrayLeft[indexPath.row]
-        celloc.tvicImageView.layer.cornerRadius = 12
+        celloc.tvicImageView.layer.cornerRadius = 13
         celloc.tvicImageView.clipsToBounds = true
+        
+        celloc.tvicButton.layer.cornerRadius = celloc.tvicButton.bounds.size.width/2
+        celloc.tvicButton.layer.shadowColor = UIColor.black.cgColor
+        celloc.tvicButton.layer.shadowOpacity = 0.77
+        celloc.tvicButton.layer.shadowOffset = CGSize(width: 2, height: 0)
 
         return celloc
     }
@@ -41,16 +46,20 @@ extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let primaryStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        explorerTableV.deselectRow(at: indexPath, animated: true)
+    }
+}
+ 
+extension ExplorerViewController: ButtonActionDelegate {
+    func transitionToMappiness() {
+        let primaryStoryboard = UIStoryboard(name: GlobalStatics.mainDotSB, bundle: Bundle.main)
         guard let targetVC = primaryStoryboard.instantiateViewController(withIdentifier: GlobalStatics.mappyStoryID) as? MappyViewController else {
             print("destination unclear bud")
             return
         }
-        explorerTableV.deselectRow(at: indexPath, animated: true)
-        navigationController?.crossDissolving(targetVC)
+           navigationController?.crossDissolving(targetVC)
     }
-     
-}
+}                 
 
 
 

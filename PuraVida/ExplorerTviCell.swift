@@ -8,8 +8,21 @@
 
 import UIKit
 
+protocol ButtonActionDelegate {
+    func transitionToMappiness()
+}
+
 class ExplorerTviCell: UITableViewCell {
+    
     @IBOutlet weak var tvicImageView: UIImageView!
     @IBOutlet weak var tvicRabel: UILabel!
-}
+    @IBOutlet weak var tvicButton: CurvedButton!
+    
+    var actionDelegate: ButtonActionDelegate?
+    
+    @IBAction func tvicButtonAction(_ sender: CurvedButton) {
+        actionDelegate?.transitionToMappiness()
+    }
+    
+}                     
 

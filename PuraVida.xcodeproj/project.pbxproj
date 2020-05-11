@@ -20,6 +20,8 @@
 		8F522240246756D50076EEA8 /* ExplorerTviCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52223F246756D50076EEA8 /* ExplorerTviCell.swift */; };
 		8FC772A024686D9D00FB1B2A /* MappyViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7729F24686D9D00FB1B2A /* MappyViewControl.swift */; };
 		8FC772A324686F3400FB1B2A /* CrossDissolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC772A224686F3400FB1B2A /* CrossDissolving.swift */; };
+		8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */; };
+		8FDD81B0246A193200204E6D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81AF246A193200204E6D /* UIImageViewExtension.swift */; };
 		8FF62D1E246336330009EF14 /* MayFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF62D1D246336330009EF14 /* MayFlower.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		8F52223F246756D50076EEA8 /* ExplorerTviCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerTviCell.swift; sourceTree = "<group>"; };
 		8FC7729F24686D9D00FB1B2A /* MappyViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappyViewControl.swift; sourceTree = "<group>"; };
 		8FC772A224686F3400FB1B2A /* CrossDissolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossDissolving.swift; sourceTree = "<group>"; };
+		8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		8FDD81AF246A193200204E6D /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		8FF62D1D246336330009EF14 /* MayFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayFlower.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				8FC772A224686F3400FB1B2A /* CrossDissolving.swift */,
+				8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */,
+				8FDD81AF246A193200204E6D /* UIImageViewExtension.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,11 +197,13 @@
 				8F52223C24674F220076EEA8 /* ExplorerViewControl.swift in Sources */,
 				8FF62D1E246336330009EF14 /* MayFlower.swift in Sources */,
 				8FC772A324686F3400FB1B2A /* CrossDissolving.swift in Sources */,
+				8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */,
 				8F3BC707245E19CD0030748A /* ViewController.swift in Sources */,
 				8F43209A2465BDEB007010FD /* NetworkDispatch.swift in Sources */,
 				8F3BC70D245E19CD0030748A /* PuraVida.xcdatamodeld in Sources */,
 				8F3BC703245E19CD0030748A /* AppD.swift in Sources */,
 				8F3BC705245E19CD0030748A /* SceneD.swift in Sources */,
+				8FDD81B0246A193200204E6D /* UIImageViewExtension.swift in Sources */,
 				8F522240246756D50076EEA8 /* ExplorerTviCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

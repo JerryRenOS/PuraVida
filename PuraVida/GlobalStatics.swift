@@ -16,6 +16,7 @@ public struct GlobalStatics {
     ]
     static let universalCelloIdentifier = "celloc"
     static let mappyStoryID = "mappy"
+    static let mainDotSB = "Main" 
                        
 }
 
