@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F3BC703245E19CD0030748A /* AppD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC702245E19CD0030748A /* AppD.swift */; };
 		8F3BC705245E19CD0030748A /* SceneD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC704245E19CD0030748A /* SceneD.swift */; };
-		8F3BC707245E19CD0030748A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC706245E19CD0030748A /* ViewController.swift */; };
+		8F3BC707245E19CD0030748A /* EarthKitViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC706245E19CD0030748A /* EarthKitViewControl.swift */; };
 		8F3BC70A245E19CD0030748A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BC708245E19CD0030748A /* Main.storyboard */; };
 		8F3BC70D245E19CD0030748A /* PuraVida.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC70B245E19CD0030748A /* PuraVida.xcdatamodeld */; };
 		8F3BC70F245E19D00030748A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BC70E245E19D00030748A /* Assets.xcassets */; };
@@ -19,6 +19,7 @@
 		8F52223C24674F220076EEA8 /* ExplorerViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52223B24674F220076EEA8 /* ExplorerViewControl.swift */; };
 		8F522240246756D50076EEA8 /* ExplorerTviCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52223F246756D50076EEA8 /* ExplorerTviCell.swift */; };
 		8F923D00246B9E1800DC2D04 /* SlidingInExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F923CFF246B9E1800DC2D04 /* SlidingInExtension.swift */; };
+		8FB3E34A246C660000DBEFD1 /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E349246C660000DBEFD1 /* PlanetNode.swift */; };
 		8FC772A024686D9D00FB1B2A /* MappyViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7729F24686D9D00FB1B2A /* MappyViewControl.swift */; };
 		8FC772A324686F3400FB1B2A /* CrossDissolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC772A224686F3400FB1B2A /* CrossDissolving.swift */; };
 		8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */; };
@@ -30,7 +31,7 @@
 		8F3BC6FF245E19CD0030748A /* PuraVida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuraVida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BC702245E19CD0030748A /* AppD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppD.swift; sourceTree = "<group>"; };
 		8F3BC704245E19CD0030748A /* SceneD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneD.swift; sourceTree = "<group>"; };
-		8F3BC706245E19CD0030748A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F3BC706245E19CD0030748A /* EarthKitViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthKitViewControl.swift; sourceTree = "<group>"; };
 		8F3BC709245E19CD0030748A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F3BC70C245E19CD0030748A /* PuraVida.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PuraVida.xcdatamodel; sourceTree = "<group>"; };
 		8F3BC70E245E19D00030748A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +42,7 @@
 		8F52223B24674F220076EEA8 /* ExplorerViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerViewControl.swift; sourceTree = "<group>"; };
 		8F52223F246756D50076EEA8 /* ExplorerTviCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerTviCell.swift; sourceTree = "<group>"; };
 		8F923CFF246B9E1800DC2D04 /* SlidingInExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingInExtension.swift; sourceTree = "<group>"; };
+		8FB3E349246C660000DBEFD1 /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
 		8FC7729F24686D9D00FB1B2A /* MappyViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappyViewControl.swift; sourceTree = "<group>"; };
 		8FC772A224686F3400FB1B2A /* CrossDissolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossDissolving.swift; sourceTree = "<group>"; };
 		8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		8F3BC701245E19CD0030748A /* PuraVida */ = {
 			isa = PBXGroup;
 			children = (
+				8FB3E342246C524100DBEFD1 /* HighTechSpecials */,
 				8F3BC708245E19CD0030748A /* Main.storyboard */,
 				8F923D03246B9FFB00DC2D04 /* Controls */,
 				8F923D01246B9FCB00DC2D04 /* CustomizedCells */,
@@ -96,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				8F52223E246754D90076EEA8 /* Default Delegates */,
-				8F3BC706245E19CD0030748A /* ViewController.swift */,
 				8FF62D1D246336330009EF14 /* MayFlower.swift */,
 				8F4320992465BDEB007010FD /* NetworkDispatch.swift */,
 			);
@@ -133,8 +135,17 @@
 			children = (
 				8FC7729F24686D9D00FB1B2A /* MappyViewControl.swift */,
 				8F52223B24674F220076EEA8 /* ExplorerViewControl.swift */,
+				8F3BC706245E19CD0030748A /* EarthKitViewControl.swift */,
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		8FB3E342246C524100DBEFD1 /* HighTechSpecials */ = {
+			isa = PBXGroup;
+			children = (
+				8FB3E349246C660000DBEFD1 /* PlanetNode.swift */,
+			);
+			path = HighTechSpecials;
 			sourceTree = "<group>";
 		};
 		8FC772A124686F2000FB1B2A /* Views */ = {
@@ -225,11 +236,12 @@
 				8FF62D1E246336330009EF14 /* MayFlower.swift in Sources */,
 				8FC772A324686F3400FB1B2A /* CrossDissolving.swift in Sources */,
 				8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */,
-				8F3BC707245E19CD0030748A /* ViewController.swift in Sources */,
+				8F3BC707245E19CD0030748A /* EarthKitViewControl.swift in Sources */,
 				8F43209A2465BDEB007010FD /* NetworkDispatch.swift in Sources */,
 				8F3BC70D245E19CD0030748A /* PuraVida.xcdatamodeld in Sources */,
 				8F923D00246B9E1800DC2D04 /* SlidingInExtension.swift in Sources */,
 				8F3BC703245E19CD0030748A /* AppD.swift in Sources */,
+				8FB3E34A246C660000DBEFD1 /* PlanetNode.swift in Sources */,
 				8F3BC705245E19CD0030748A /* SceneD.swift in Sources */,
 				8FDD81B0246A193200204E6D /* ImageViewExtension.swift in Sources */,
 				8F522240246756D50076EEA8 /* ExplorerTviCell.swift in Sources */,
