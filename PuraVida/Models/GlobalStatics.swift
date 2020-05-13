@@ -26,5 +26,6 @@ public var placesPhotographsArrayLeft = ["pic-statueofLiberty.jpg", "pic-goldenS
    
 // MARK: - on-going collection of significant coordinates
 
-var empireState = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
-     
+public var empireState = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
+public var dubaiLandmark = CLLocationCoordinate2D(latitude: 25.1412, longitude: 55.1852)
+// needs micro adjustment, and recommended distance is 1200

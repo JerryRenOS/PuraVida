@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yrc-An-RBB">
-                                <rect key="frame" x="10" y="54" width="394" height="701"/>
+                                <rect key="frame" x="10" y="54" width="394" height="601"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDL-Uz-Lsf">
                                 <rect key="frame" x="321" y="805" width="73" height="37"/>
@@ -42,6 +42,36 @@
                                     <action selector="leftRotation:" destination="W9G-Bt-zzN" eventType="touchUpInside" id="17S-2Z-DFn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-yL-NhC">
+                                <rect key="frame" x="288" y="722" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dive"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-jx-064">
+                                <rect key="frame" x="278" y="684" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Elevate"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr7-a9-Dr7">
+                                <rect key="frame" x="90" y="684" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Spin"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcc-ua-JMm">
+                                <rect key="frame" x="91" y="721" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Flip"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlI-JH-Bhe">
+                                <rect key="frame" x="179" y="727" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Forward"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG4-t1-9h2">
+                                <rect key="frame" x="190" y="782" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -49,10 +79,10 @@
                             <constraint firstItem="Yrc-An-RBB" firstAttribute="leading" secondItem="Kqs-CT-BDk" secondAttribute="leading" constant="10" id="Hib-tD-R4g"/>
                             <constraint firstItem="Kqs-CT-BDk" firstAttribute="bottom" secondItem="YWf-CT-1W8" secondAttribute="bottom" constant="20" id="YGr-ml-sbW"/>
                             <constraint firstItem="Kqs-CT-BDk" firstAttribute="trailing" secondItem="mDL-Uz-Lsf" secondAttribute="trailing" constant="20" id="jnn-yl-KKM"/>
-                            <constraint firstItem="mDL-Uz-Lsf" firstAttribute="top" secondItem="Yrc-An-RBB" secondAttribute="bottom" constant="50" id="k8n-H4-3qp"/>
+                            <constraint firstItem="mDL-Uz-Lsf" firstAttribute="top" secondItem="Yrc-An-RBB" secondAttribute="bottom" constant="150" id="k8n-H4-3qp"/>
                             <constraint firstItem="YWf-CT-1W8" firstAttribute="leading" secondItem="Kqs-CT-BDk" secondAttribute="leading" constant="20" id="oxw-9J-bnP"/>
                             <constraint firstItem="Kqs-CT-BDk" firstAttribute="trailing" secondItem="Yrc-An-RBB" secondAttribute="trailing" constant="10" id="rSt-gU-N8M"/>
-                            <constraint firstItem="YWf-CT-1W8" firstAttribute="top" secondItem="Yrc-An-RBB" secondAttribute="bottom" constant="50" id="u9q-pD-Rr4"/>
+                            <constraint firstItem="YWf-CT-1W8" firstAttribute="top" secondItem="Yrc-An-RBB" secondAttribute="bottom" constant="150" id="u9q-pD-Rr4"/>
                             <constraint firstItem="Yrc-An-RBB" firstAttribute="top" secondItem="Kqs-CT-BDk" secondAttribute="top" constant="10" id="yaR-eD-iBK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kqs-CT-BDk"/>

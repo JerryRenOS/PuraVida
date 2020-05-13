@@ -12,7 +12,7 @@ import UIKit
 class MappyViewController: UIViewController {
     
     var camera: MKMapCamera?
-    let distance: CLLocationDistance = 800
+    let distance: CLLocationDistance = 1200
     let heading = 45.0
     let pitch: CGFloat = 40.0
     
@@ -23,8 +23,9 @@ class MappyViewController: UIViewController {
         super.viewDidLoad()
         
         mappyMapView.mapType = .satelliteFlyover
-        let coordiante = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
-        camera = MKMapCamera(lookingAtCenter: coordiante, fromDistance: distance, pitch: pitch, heading: heading)
+        let coordiantes = empireState
+            // CLLocationCoordinate2D(latitude: 25.1412, longitude: 55.1852)
+        camera = MKMapCamera(lookingAtCenter: coordiantes, fromDistance: distance, pitch: pitch, heading: heading)
         
         if let unwrappedCamera = camera {
             mappyMapView.camera = unwrappedCamera
@@ -48,3 +49,8 @@ class MappyViewController: UIViewController {
     
 }
 
+
+
+// mapView.isZoomEnabled = false
+//mapView.isScrollEnabled = false
+//mapView.isUserInteractionEnabled = false
