@@ -196,6 +196,59 @@
             </objects>
             <point key="canvasLocation" x="-804" y="1067"/>
         </scene>
+        <!--Planet AR-->
+        <scene sceneID="7en-nj-eSV">
+            <objects>
+                <viewController id="K1s-pe-yek" customClass="PlanetARViewController" customModule="PuraVida" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pmk-1b-i00">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vT8-Pq-k2X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5z-Vl-6bs" customClass="CurvedButton" customModule="PuraVida" customModuleProvider="target">
+                                <rect key="frame" x="166" y="717" width="82" height="60"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="38i-sH-WIM"/>
+                                    <constraint firstAttribute="height" constant="60" id="aac-QS-UF9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="tap4earth">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vT8-Pq-k2X" firstAttribute="leading" secondItem="5BQ-Vj-m7e" secondAttribute="leading" id="2TE-6g-vGb"/>
+                            <constraint firstItem="5BQ-Vj-m7e" firstAttribute="bottom" secondItem="vT8-Pq-k2X" secondAttribute="bottom" id="7Pz-df-zvj"/>
+                            <constraint firstItem="5BQ-Vj-m7e" firstAttribute="bottom" secondItem="F5z-Vl-6bs" secondAttribute="bottom" constant="36" id="8IG-Mh-lF7"/>
+                            <constraint firstItem="vT8-Pq-k2X" firstAttribute="top" secondItem="5BQ-Vj-m7e" secondAttribute="top" id="cmg-Sm-1R3"/>
+                            <constraint firstItem="vT8-Pq-k2X" firstAttribute="trailing" secondItem="5BQ-Vj-m7e" secondAttribute="trailing" id="j1Z-gS-qf5"/>
+                            <constraint firstItem="F5z-Vl-6bs" firstAttribute="centerX" secondItem="pmk-1b-i00" secondAttribute="centerX" id="qYa-Dz-JRV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5BQ-Vj-m7e"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Planet AR" id="aEP-pU-X9S"/>
+                    <connections>
+                        <outlet property="planetARSceneView" destination="vT8-Pq-k2X" id="bjc-uO-DJa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIq-t5-5ok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2562.3188405797105" y="622.76785714285711"/>
+        </scene>
         <!--Planetary Devastation-->
         <scene sceneID="qlL-EL-9hX">
             <objects>
@@ -264,6 +317,7 @@
                     <connections>
                         <segue destination="xaP-bc-XdP" kind="relationship" relationship="viewControllers" id="0jY-L9-hhp"/>
                         <segue destination="r2d-dw-V0c" kind="relationship" relationship="viewControllers" id="ozh-ro-dBG"/>
+                        <segue destination="K1s-pe-yek" kind="relationship" relationship="viewControllers" id="Nod-xq-Lgw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eat-ib-VcF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

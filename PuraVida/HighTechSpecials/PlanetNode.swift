@@ -18,6 +18,7 @@ class PlanetNode: SCNNode {
         self.geometry?.firstMaterial?.normal.contents = UIImage(named: "Normal")
         self.geometry?.firstMaterial?.specular.contents = UIImage(named: "Specular")
         
+        self.geometry?.firstMaterial?.transparency = 1
         self.geometry?.firstMaterial?.shininess = 77
         
         
