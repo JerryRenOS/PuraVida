@@ -21,10 +21,10 @@ class PlanetNode: SCNNode {
         self.geometry?.firstMaterial?.shininess = 77
         
         
-        
-        let action = SCNAction.rotate(by: 360 * CGFloat(Double.pi / 360), around: SCNVector3(0, 1, 0), duration: 7)
-        let repeatedAction = SCNAction.repeatForever(action)
-        self.runAction(repeatedAction)
+        let action = SCNAction.rotate(by: 360 * CGFloat(Double.pi / 360), around: SCNVector3(0, 1, 0), duration: 6)
+     //   let repeatedAction = SCNAction.repeatForever(action)
+        let desiredAction = SCNAction.repeat(action, count: 2)
+        self.runAction(desiredAction)
          
     }
     

@@ -11,20 +11,20 @@ import SceneKit
 
 class EarthKitViewControl: UIViewController {
 
+    @IBOutlet weak var planetSceneKitView: SCNView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let scene = SCNScene()
-        let sceneView = self.view as! SCNView
-        sceneView.scene = scene
         
-        sceneView.backgroundColor = .black
-        sceneView.showsStatistics = true
-        sceneView.allowsCameraControl = true
+        planetSceneKitView.scene = scene
+        planetSceneKitView.backgroundColor = .black
+        planetSceneKitView.allowsCameraControl = true
         
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
-        cameraNode.position = SCNVector3(0, 0, 7) // how far
+        cameraNode.position = SCNVector3(0, 0, 5) // how far
         scene.rootNode.addChildNode(cameraNode)
         
         let lightoNodo = SCNNode()
@@ -36,8 +36,6 @@ class EarthKitViewControl: UIViewController {
         scene.rootNode.addChildNode(planetNode)
         
     }
-
-    
 }
              
 
@@ -49,3 +47,10 @@ class EarthKitViewControl: UIViewController {
 // override var prefersStatusBarHidden: Bool {
 //        return true
 //    }
+
+
+//        let sceneView = self.view as! SCNView
+//        sceneView.scene = scene
+//        sceneView.backgroundColor = .black
+//        sceneView.showsStatistics = true
+//        sceneView.allowsCameraControl = true
