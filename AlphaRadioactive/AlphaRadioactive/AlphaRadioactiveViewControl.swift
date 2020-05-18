@@ -16,22 +16,44 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         sceneView.delegate = self
-        manifestSpherical()
+        
+        manifestDiciness()
+  
     }
     
+    // MARK: - Diciness
+    
+    func manifestDiciness() {
+        sceneView.autoenablesDefaultLighting = true
+        let diceyScene = SCNScene(named: "art.scnassets/diceCollada.scn")!
+        
+        if let diceyNode = diceyScene.rootNode.childNode(withName: "Dice", recursively: true) {
+            diceyNode.position = SCNVector3(x: 0, y: 0, z: -0.1)
+            sceneView.scene.rootNode.addChildNode(diceyNode)
+            
+            let rotationAction = SCNAction.rotate(by: -360 * CGFloat(Double.pi / 90), around: SCNVector3(0, 0.1, 0), duration: 17)
+            diceyNode.runAction(rotationAction)
+        }
+    }
+    
+    
+    
     // MARK: - Spherical
-
+    
     func manifestSpherical() {
         let spherical = SCNSphere(radius: 0.1)
         let spherMaterial = SCNMaterial()
         spherMaterial.diffuse.contents = UIImage(named: "art.scnassets/EarthyTexture2K.jpg")
         spherMaterial.specular.contents = UIImage(named: "art.scnassets/EarthyTexture2K.jpg")
         spherMaterial.normal.contents = UIImage(named: "Normal")
-
+        
+        //try  EarthySpecular2k.tif when have chance
+        
+        
         // can have one or two different buttons on the bottom for different showcase effects
-// (E.g. both diffuse and specular to earthTexture2K and no other settings would have a cool effect)
+        // (E.g. both diffuse and specular to earthTexture2K and no other settings would have a cool effect)
         
         
         spherical.materials = [spherMaterial]
@@ -45,10 +67,10 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
         
         sceneView.scene.rootNode.addChildNode(spherNode)
         sceneView.autoenablesDefaultLighting = true
-
+        
     }
     
-
+    
     // MARK: - Cubicle
     
     func manifestCubicle() {
@@ -66,21 +88,21 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
         let configuration = ARWorldTrackingConfiguration()
         
         print(ARWorldTrackingConfiguration.isSupported)
-
+        
         sceneView.session.run(configuration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-
+        
         sceneView.session.pause()
     }
 }
- 
+
 
 
 
@@ -89,7 +111,7 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
 //
 //        // Set the scene to the view
 //        sceneView.scene = scene
- 
+
 
 // MARK: - SCNAction
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F21B9AF2472392300644715 /* MayFllowSeventeenth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21B9AE2472392300644715 /* MayFllowSeventeenth.swift */; };
 		8F3BC703245E19CD0030748A /* AppD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC702245E19CD0030748A /* AppD.swift */; };
 		8F3BC705245E19CD0030748A /* SceneD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC704245E19CD0030748A /* SceneD.swift */; };
 		8F3BC707245E19CD0030748A /* EarthKitViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC706245E19CD0030748A /* EarthKitViewControl.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F21B9AE2472392300644715 /* MayFllowSeventeenth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayFllowSeventeenth.swift; sourceTree = "<group>"; };
 		8F3BC6FF245E19CD0030748A /* PuraVida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuraVida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BC702245E19CD0030748A /* AppD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppD.swift; sourceTree = "<group>"; };
 		8F3BC704245E19CD0030748A /* SceneD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneD.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB3E349246C660000DBEFD1 /* PlanetNode.swift */,
+				8F21B9AE2472392300644715 /* MayFllowSeventeenth.swift */,
 			);
 			path = HighTechSpecials;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				8F3BC705245E19CD0030748A /* SceneD.swift in Sources */,
 				8FDD81B0246A193200204E6D /* ImageViewExtension.swift in Sources */,
 				8F522240246756D50076EEA8 /* ExplorerTviCell.swift in Sources */,
+				8F21B9AF2472392300644715 /* MayFllowSeventeenth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

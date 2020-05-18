@@ -14,12 +14,13 @@ class PlanetNode: SCNNode {
         super.init()
         self.geometry = SCNSphere(radius: 1)
         self.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Diffuse")
+        self.geometry?.firstMaterial?.specular.contents = UIImage(named: "EarthyTexture2K.jpg")
         self.geometry?.firstMaterial?.emission.contents = UIImage(named: "Emission")
         self.geometry?.firstMaterial?.normal.contents = UIImage(named: "Normal")
-        self.geometry?.firstMaterial?.specular.contents = UIImage(named: "Specular")
+//        self.geometry?.firstMaterial?.specular.contents = UIImage(named: "Specular")
         
         self.geometry?.firstMaterial?.transparency = 1
-        self.geometry?.firstMaterial?.shininess = 77
+       self.geometry?.firstMaterial?.shininess = 77
         
         
         let action = SCNAction.rotate(by: 360 * CGFloat(Double.pi / 360), around: SCNVector3(0, 1, 0), duration: 6)
