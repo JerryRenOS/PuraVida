@@ -22,7 +22,7 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         manifestDiciness()
-  
+        
     }
     
     // MARK: - Diciness
@@ -104,7 +104,7 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
             planeNode.geometry = scenePlane
             
             node.addChildNode(planeNode)
-             
+            
         } else {
             return
         }
@@ -116,15 +116,21 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
             
             let hitResults = sceneView.hitTest(firstTouchLocation, types: .existingPlaneUsingExtent)
             
-            if !hitResults.isEmpty {
-                 print("plane' been touched")
-            } else {
-                print("touch was outside of the plane")
+            if let hitResultFirst = hitResults.first {
+                
+                let diceyScene = SCNScene(named: "art.scnassets/diceCollada.scn")!
+                
+                if let diceyNode = diceyScene.rootNode.childNode(withName: "Dice", recursively: true) {
+                    diceyNode.position = SCNVector3(x: hitResultFirst.worldTransform.columns.3.x ,  y: hitResultFirst.worldTransform.columns.3.y + diceyNode.boundingSphere.radius, z: hitResultFirst.worldTransform.columns.3.z)
+                    
+                    sceneView.scene.rootNode.addChildNode(diceyNode)
+                }
+                
             }
         }
     }
     
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -143,7 +149,7 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
     
-
+    
     
     
 }
