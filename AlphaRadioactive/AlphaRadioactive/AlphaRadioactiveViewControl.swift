@@ -14,6 +14,8 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet var sceneView: ARSCNView!
     
+    var diceyArray = [SCNNode]() 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,7 +49,15 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
             return
         }
     }
-
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        spinEveryDiciness()
+    }     
+    
+    @IBAction func rollingRefresher(_ sender: UIBarButtonItem) {
+        spinEveryDiciness()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -65,10 +75,6 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
         
         sceneView.session.pause()
     }
-    
-    
-    
-    
 }
 
 

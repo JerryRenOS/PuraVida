@@ -62,9 +62,9 @@
 			children = (
 				8F7BBBF32470429B003B4331 /* AppDelegate.swift */,
 				8F7BBBF52470429B003B4331 /* art.scnassets */,
-				8F7BBBF72470429B003B4331 /* AlphaRadioactiveViewControl.swift */,
 				8F3556BB2476DFD100FB019F /* TouchesBegan.swift */,
 				8F3556BD2476E27200FB019F /* ManifestationFuncs.swift */,
+				8F7BBBF72470429B003B4331 /* AlphaRadioactiveViewControl.swift */,
 				8F7BBBF92470429B003B4331 /* Main.storyboard */,
 				8F7BBBFC247042A2003B4331 /* Assets.xcassets */,
 				8F7BBBFE247042A2003B4331 /* LaunchScreen.storyboard */,

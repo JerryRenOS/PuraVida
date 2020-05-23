@@ -24,21 +24,41 @@ extension AlphaRadioactiveViewController {
                 if let diceyNode = diceyScene.rootNode.childNode(withName: "Dice", recursively: true) {
                     diceyNode.position = SCNVector3(x: hitResultFirst.worldTransform.columns.3.x ,  y: hitResultFirst.worldTransform.columns.3.y + diceyNode.boundingSphere.radius, z: hitResultFirst.worldTransform.columns.3.z)
                     
+                    diceyArray.append(diceyNode)
+                    
                     sceneView.scene.rootNode.addChildNode(diceyNode)
                     
-                    let randomXro = (Float.pi/2) * Float(arc4random_uniform(4) + 1)
-                    let randomZro = (Float.pi/2) * Float(arc4random_uniform(4) + 1)
-                    let randomYro = (Float.pi/2) * Float(arc4random_uniform(4) + 1)
-                    // Yro only for the planets (with a button for spin)
-                    
-                    diceyNode.runAction(
-                        SCNAction.rotateBy(x: CGFloat(7 * randomXro), y: 0,
-                                           z: CGFloat(7 * randomZro), duration: 0.6)
-                    )   
+                    rolling(diciNode: diceyNode)
+ 
                 }
                 
             }
         }
     }
-  
+    
 }
+
+extension AlphaRadioactiveViewController {
+    
+    func spinEveryDiciness() {
+        
+        if !diceyArray.isEmpty {
+            for dici in diceyArray {
+                 rolling(diciNode: dici)
+            }
+        }
+    }
+    
+    func rolling(diciNode: SCNNode) {
+        let randomXro = (Float.pi/2) * Float(arc4random_uniform(4) + 1)
+        let randomZro = (Float.pi/2) * Float(arc4random_uniform(4) + 1)
+        let randomYro = (Float.pi/2) * Float(arc4random_uniform(4) + 1)
+        // Yro only for the planets (with a button for spin)
+        
+        diciNode.runAction(
+            SCNAction.rotateBy(x: CGFloat(7 * randomXro), y: 0,
+                               z: CGFloat(7 * randomZro), duration: 0.6)
+        )
+    }
+    
+}  
