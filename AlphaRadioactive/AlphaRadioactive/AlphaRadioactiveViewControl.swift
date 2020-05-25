@@ -14,48 +14,15 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet var sceneView: ARSCNView!
     
-    var diceyArray = [SCNNode]() 
+    var diceyArray = [SCNNode]()
+    
+    // MARK: - Lifecycle methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
-        
         sceneView.delegate = self
         
         manifestDiciness()
-        
-    }
-    
-
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if anchor is ARPlaneAnchor {
-            
-            let planeAnchor = anchor as! ARPlaneAnchor
-            
-            let scenePlane = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
-            let planeNode = SCNNode()
-            planeNode.position = SCNVector3(x: planeAnchor.center.x, y: 0, z: planeAnchor.center.z)
-            planeNode.transform = SCNMatrix4MakeRotation(-Float.pi/2 , 1, 0, 0)
-            
-            let gridMaterial = SCNMaterial()
-            gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
-            scenePlane.materials = [gridMaterial]
-            planeNode.geometry = scenePlane
-            
-            node.addChildNode(planeNode)
-            
-        } else {
-            return
-        }
-    }
-    
-    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
-        spinEveryDiciness()
-    }     
-    
-    @IBAction func rollingRefresher(_ sender: UIBarButtonItem) {
-        spinEveryDiciness()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +31,6 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
         let configuration = ARWorldTrackingConfiguration()
         
         configuration.planeDetection = .horizontal
-        
         
         print(ARWorldTrackingConfiguration.isSupported)
         sceneView.session.run(configuration)
@@ -75,6 +41,53 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
         
         sceneView.session.pause()
     }
+    
+    
+    // MARK: - ARSceneViewDelegate
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        
+        guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
+        
+        let planeNode = generatePlane(withPlaneAnchor: planeAnchor)
+        
+        node.addChildNode(planeNode)
+    }
+    
+    // MARK: - renderer's helper function
+    
+    func generatePlane(withPlaneAnchor planeAnchor: ARPlaneAnchor) -> SCNNode {
+        
+        let scenePlane = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
+        let planeNode = SCNNode()
+        planeNode.position = SCNVector3(x: planeAnchor.center.x, y: 0, z: planeAnchor.center.z)
+        planeNode.transform = SCNMatrix4MakeRotation(-Float.pi/2 , 1, 0, 0)
+        
+        let gridMaterial = SCNMaterial()
+        gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
+        scenePlane.materials = [gridMaterial]
+        planeNode.geometry = scenePlane
+        
+        return planeNode
+    }
+    
+    // MARK: - IBActions 'n stuff
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        spinEveryDiciness()
+    }     
+    
+    @IBAction func rollingRefresher(_ sender: UIBarButtonItem) {
+        spinEveryDiciness()
+    }
+    @IBAction func RollerRestarter(_ sender: UIBarButtonItem) {
+        if !diceyArray.isEmpty {
+            for dici in diceyArray {
+                dici.removeFromParentNode()
+            }
+        }
+    }
+           
 }
 
 
@@ -93,3 +106,13 @@ class AlphaRadioactiveViewController: UIViewController, ARSCNViewDelegate {
 //    //   let repeatedAction = SCNAction.repeatForever(action)
 //       let desiredAction = SCNAction.repeat(action, count: 2)
 //       self.runAction(desiredAction)
+
+
+// MARK: - The shiny yellow dots
+//     self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+
+
+
+// //let planeAnchor = anchor as! ARPlaneAnchor
+//
+

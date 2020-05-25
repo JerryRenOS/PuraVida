@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Alpha Radioactive View Controller-->
+        <!-- -->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="AlphaRadioactiveViewController" customModule="AlphaRadioactive" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,11 +28,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cB1-1k-6XR">
+                    <navigationItem key="navigationItem" title=" " id="cB1-1k-6XR">
                         <barButtonItem key="leftBarButtonItem" title="Roll Again" id="ehL-27-flg">
-                            <color key="tintColor" red="0.6697119507" green="0.97644816010000002" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="rollingRefresher:" destination="BV1-FR-VrT" id="Dro-uf-3AQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="uKv-ky-Mfa">
+                            <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="RollerRestarter:" destination="BV1-FR-VrT" id="ZmU-uG-kie"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

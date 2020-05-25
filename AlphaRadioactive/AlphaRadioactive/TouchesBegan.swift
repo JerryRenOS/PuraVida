@@ -15,28 +15,34 @@ extension AlphaRadioactiveViewController {
         if let firstTouch = touches.first {
             let firstTouchLocation = firstTouch.location(in: sceneView)
             
-            let hitResults = sceneView.hitTest(firstTouchLocation, types: .existingPlaneUsingExtent)
+            let hitSpots = sceneView.hitTest(firstTouchLocation, types: .existingPlaneUsingExtent)
             
-            if let hitResultFirst = hitResults.first {
-                
-                let diceyScene = SCNScene(named: "art.scnassets/diceCollada.scn")!
-                
-                if let diceyNode = diceyScene.rootNode.childNode(withName: "Dice", recursively: true) {
-                    diceyNode.position = SCNVector3(x: hitResultFirst.worldTransform.columns.3.x ,  y: hitResultFirst.worldTransform.columns.3.y + diceyNode.boundingSphere.radius, z: hitResultFirst.worldTransform.columns.3.z)
-                    
-                    diceyArray.append(diceyNode)
-                    
-                    sceneView.scene.rootNode.addChildNode(diceyNode)
-                    
-                    rolling(diciNode: diceyNode)
- 
-                }
-                
+            if let hitSpotsFirst = hitSpots.first {
+                createDicie(atSpot: hitSpotsFirst)
             }
         }
     }
-    
 }
+
+extension AlphaRadioactiveViewController {  // supplementing touchesBegan()
+    
+    func createDicie(atSpot spot: ARHitTestResult) {
+        let diceyScene = SCNScene(named: "art.scnassets/diceCollada.scn")!
+        
+        if let diceyNode = diceyScene.rootNode.childNode(withName: "Dice", recursively: true) {
+            diceyNode.position = SCNVector3(x: spot.worldTransform.columns.3.x ,  y: spot.worldTransform.columns.3.y + diceyNode.boundingSphere.radius, z: spot.worldTransform.columns.3.z)
+            
+            diceyArray.append(diceyNode)
+            
+            sceneView.scene.rootNode.addChildNode(diceyNode)
+            
+            rolling(diciNode: diceyNode)
+            
+        }
+    }
+}
+
+
 
 extension AlphaRadioactiveViewController {
     
@@ -44,7 +50,7 @@ extension AlphaRadioactiveViewController {
         
         if !diceyArray.isEmpty {
             for dici in diceyArray {
-                 rolling(diciNode: dici)
+                rolling(diciNode: dici)
             }
         }
     }
