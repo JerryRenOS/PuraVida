@@ -19,6 +19,7 @@
 		8F43209C2465BE82007010FD /* GlobalStatics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43209B2465BE82007010FD /* GlobalStatics.swift */; };
 		8F52223C24674F220076EEA8 /* ExplorerViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52223B24674F220076EEA8 /* ExplorerViewControl.swift */; };
 		8F522240246756D50076EEA8 /* ExplorerTviCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52223F246756D50076EEA8 /* ExplorerTviCell.swift */; };
+		8F845FDB247DEAA700B79C76 /* 3DSceneKitPlaya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F845FDA247DEAA700B79C76 /* 3DSceneKitPlaya.swift */; };
 		8F923D00246B9E1800DC2D04 /* SlidingInExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F923CFF246B9E1800DC2D04 /* SlidingInExtension.swift */; };
 		8FB3E34A246C660000DBEFD1 /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E349246C660000DBEFD1 /* PlanetNode.swift */; };
 		8FC4E7CF246D9BF200CD94B9 /* PlanetARViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC4E7CE246D9BF200CD94B9 /* PlanetARViewControl.swift */; };
@@ -44,6 +45,7 @@
 		8F43209B2465BE82007010FD /* GlobalStatics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStatics.swift; sourceTree = "<group>"; };
 		8F52223B24674F220076EEA8 /* ExplorerViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerViewControl.swift; sourceTree = "<group>"; };
 		8F52223F246756D50076EEA8 /* ExplorerTviCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerTviCell.swift; sourceTree = "<group>"; };
+		8F845FDA247DEAA700B79C76 /* 3DSceneKitPlaya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DSceneKitPlaya.swift; sourceTree = "<group>"; };
 		8F923CFF246B9E1800DC2D04 /* SlidingInExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingInExtension.swift; sourceTree = "<group>"; };
 		8FB3E349246C660000DBEFD1 /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
 		8FC4E7CE246D9BF200CD94B9 /* PlanetARViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetARViewControl.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				8FB3E349246C660000DBEFD1 /* PlanetNode.swift */,
 				8F21B9AE2472392300644715 /* MayFllowSeventeenth.swift */,
+				8F845FDA247DEAA700B79C76 /* 3DSceneKitPlaya.swift */,
 			);
 			path = HighTechSpecials;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				8F43209C2465BE82007010FD /* GlobalStatics.swift in Sources */,
 				8F52223C24674F220076EEA8 /* ExplorerViewControl.swift in Sources */,
 				8FF62D1E246336330009EF14 /* MayFlower.swift in Sources */,
+				8F845FDB247DEAA700B79C76 /* 3DSceneKitPlaya.swift in Sources */,
 				8FC772A324686F3400FB1B2A /* CrossDissolving.swift in Sources */,
 				8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */,
 				8F3BC707245E19CD0030748A /* EarthKitViewControl.swift in Sources */,
