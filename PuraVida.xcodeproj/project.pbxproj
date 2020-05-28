@@ -86,8 +86,8 @@
 		8F3BC701245E19CD0030748A /* PuraVida */ = {
 			isa = PBXGroup;
 			children = (
-				8FB3E342246C524100DBEFD1 /* HighTechSpecials */,
 				8F3BC708245E19CD0030748A /* Main.storyboard */,
+				8FB3E342246C524100DBEFD1 /* HighTechSpecials */,
 				8F923D03246B9FFB00DC2D04 /* Controls */,
 				8F923D01246B9FCB00DC2D04 /* CustomizedCells */,
 				8F923D02246B9FE000DC2D04 /* Models */,

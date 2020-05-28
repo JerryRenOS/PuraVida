@@ -29,6 +29,19 @@ class MyViewController : UIViewController {
         
         // MARK: - Shapes haha
         
+        // MARK: - Customized BezierPath
+        
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: CGPoint(x: 0, y: 0))
+        bezierPath.addLine(to: CGPoint(x: 1, y: 1))
+        bezierPath.addLine(to: CGPoint(x: 2, y: 0))
+        bezierPath.addLine(to: CGPoint(x: 1, y: -1))
+        bezierPath.close()
+        
+        let shaggyShape = SCNShape(path: bezierPath, extrusionDepth: 0.2)
+
+        // MARK: ------------------------
+        
         let boxyBox = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0.77) // with cyan diffuse & white specular
         let torusDonut = SCNTorus(ringRadius: 1, pipeRadius:  0.5 )
         
