@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F21B9AF2472392300644715 /* MayFllowSeventeenth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21B9AE2472392300644715 /* MayFllowSeventeenth.swift */; };
+		8F21B9AF2472392300644715 /* MayFlowerSeventeenth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21B9AE2472392300644715 /* MayFlowerSeventeenth.swift */; };
 		8F3BC703245E19CD0030748A /* AppD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC702245E19CD0030748A /* AppD.swift */; };
 		8F3BC705245E19CD0030748A /* SceneD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC704245E19CD0030748A /* SceneD.swift */; };
 		8F3BC707245E19CD0030748A /* EarthKitViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC706245E19CD0030748A /* EarthKitViewControl.swift */; };
@@ -27,11 +27,10 @@
 		8FC772A324686F3400FB1B2A /* CrossDissolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC772A224686F3400FB1B2A /* CrossDissolving.swift */; };
 		8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */; };
 		8FDD81B0246A193200204E6D /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81AF246A193200204E6D /* ImageViewExtension.swift */; };
-		8FF62D1E246336330009EF14 /* MayFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF62D1D246336330009EF14 /* MayFlower.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F21B9AE2472392300644715 /* MayFllowSeventeenth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayFllowSeventeenth.swift; sourceTree = "<group>"; };
+		8F21B9AE2472392300644715 /* MayFlowerSeventeenth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayFlowerSeventeenth.swift; sourceTree = "<group>"; };
 		8F3BC6FF245E19CD0030748A /* PuraVida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuraVida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BC702245E19CD0030748A /* AppD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppD.swift; sourceTree = "<group>"; };
 		8F3BC704245E19CD0030748A /* SceneD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneD.swift; sourceTree = "<group>"; };
@@ -53,7 +52,6 @@
 		8FC772A224686F3400FB1B2A /* CrossDissolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossDissolving.swift; sourceTree = "<group>"; };
 		8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		8FDD81AF246A193200204E6D /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
-		8FF62D1D246336330009EF14 /* MayFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayFlower.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				8F52223E246754D90076EEA8 /* Default Delegates */,
-				8FF62D1D246336330009EF14 /* MayFlower.swift */,
 				8F4320992465BDEB007010FD /* NetworkDispatch.swift */,
+				8F21B9AE2472392300644715 /* MayFlowerSeventeenth.swift */,
 			);
 			path = "Distractions for now";
 			sourceTree = "<group>";
@@ -142,7 +140,6 @@
 				8FC7729F24686D9D00FB1B2A /* MappyViewControl.swift */,
 				8FC4E7CE246D9BF200CD94B9 /* PlanetARViewControl.swift */,
 				8F52223B24674F220076EEA8 /* ExplorerViewControl.swift */,
-				8F3BC706245E19CD0030748A /* EarthKitViewControl.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -151,8 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				8FB3E349246C660000DBEFD1 /* PlanetNode.swift */,
-				8F21B9AE2472392300644715 /* MayFllowSeventeenth.swift */,
 				8F845FDA247DEAA700B79C76 /* 3DSceneKitPlaya.swift */,
+				8F3BC706245E19CD0030748A /* EarthKitViewControl.swift */,
 			);
 			path = HighTechSpecials;
 			sourceTree = "<group>";
@@ -242,7 +239,6 @@
 				8FC772A024686D9D00FB1B2A /* MappyViewControl.swift in Sources */,
 				8F43209C2465BE82007010FD /* GlobalStatics.swift in Sources */,
 				8F52223C24674F220076EEA8 /* ExplorerViewControl.swift in Sources */,
-				8FF62D1E246336330009EF14 /* MayFlower.swift in Sources */,
 				8F845FDB247DEAA700B79C76 /* 3DSceneKitPlaya.swift in Sources */,
 				8FC772A324686F3400FB1B2A /* CrossDissolving.swift in Sources */,
 				8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */,
@@ -256,7 +252,7 @@
 				8F3BC705245E19CD0030748A /* SceneD.swift in Sources */,
 				8FDD81B0246A193200204E6D /* ImageViewExtension.swift in Sources */,
 				8F522240246756D50076EEA8 /* ExplorerTviCell.swift in Sources */,
-				8F21B9AF2472392300644715 /* MayFllowSeventeenth.swift in Sources */,
+				8F21B9AF2472392300644715 /* MayFlowerSeventeenth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

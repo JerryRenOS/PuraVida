@@ -9,7 +9,7 @@
 import UIKit
 import SceneKit
 
-class MyViewController : UIViewController {
+class ThreeDSceneKitPlayaViewController: UIViewController {
     override func loadView() {
         let view = UIView()
         view.backgroundColor = .white
@@ -20,12 +20,16 @@ class MyViewController : UIViewController {
         label.textColor = .black
         
 
-        let sceneView = SCNView(frame: CGRect(x: 0, y: 0, width: 370, height: 370))
+        let sceneView = SCNView(frame: CGRect(x: 11, y: 200, width: 389, height: 370))
+
         let scene = SCNScene()
 
         sceneView.scene = scene
-        sceneView.backgroundColor = UIColor.black
+        sceneView.backgroundColor = UIColor.white // default's black
         sceneView.autoenablesDefaultLighting = true
+        
+        view.addSubview(sceneView)
+        self.view = view
         
          
         // MARK: - Separator
@@ -67,11 +71,7 @@ class MyViewController : UIViewController {
         
         let repetitveRotation = SCNAction.repeatForever(rotation)
         eNode.runAction(repetitveRotation)
-        
-        view.addSubview(sceneView)
-        self.view = view
-        
-        
+
         // MARK: - Separator
         
         let customNode = SCNNode()
@@ -115,7 +115,7 @@ class MyViewController : UIViewController {
     }
 }
      
-
+//  let sceneView = SCNView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height * 0.7))
 
 
 
