@@ -284,6 +284,9 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="iceAge:" destination="r2d-dw-V0c" eventType="touchUpInside" id="H9w-PU-7ed"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPf-X8-9Mf" customClass="CurvedButton" customModule="PuraVida" customModuleProvider="target">
                                 <rect key="frame" x="33" y="739" width="116" height="60"/>

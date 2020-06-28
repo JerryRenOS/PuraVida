@@ -54,11 +54,14 @@ class EarthKitViewControl: UIViewController {
 
         donutButton.setTitle("Speed up", for: .normal)
     }
-    
-    private func freezeThePlanet() {
-        planetNode.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "NASAfrozen.jpg")
+
+    @IBAction func iceAge(_ sender: UIButton) {
+        self.freezeThePlanet()
     }
-    
+
+    private func freezeThePlanet() {
+           planetNode.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "NASAfrozen.jpg")
+       }
 }
 
 
