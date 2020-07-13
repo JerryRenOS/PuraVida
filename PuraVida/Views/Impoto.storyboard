@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SignaU View Controller-->
+        <scene sceneID="Lue-qn-09W">
+            <objects>
+                <viewController id="Pmv-yb-TUX" customClass="SignaUViewController" customModule="UpSignUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i4o-qL-hYS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWw-YD-twS">
+                                <rect key="frame" x="35" y="114" width="90.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLp-BH-fwe">
+                                <rect key="frame" x="35" y="196" width="80.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gy0-Ig-hMb" customClass="RTextfield" customModule="UpSignUp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="138.5" width="344" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cRadi">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cRadio">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borColo">
+                                        <color key="value" red="0.35953870170000002" green="0.80321881240000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borWii">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmX-BA-MD9" customClass="RoButton" customModule="UpSignUp" customModuleProvider="target">
+                                <rect key="frame" x="110" y="284.5" width="194" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="ZMr-iZ-Apw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DmC-wR-MYC" userLabel="Sign in instead Stack">
+                                <rect key="frame" x="96.5" y="345" width="221" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fy-ri-2Dm">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="30"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od8-lC-yYK">
+                                        <rect key="frame" x="174" y="0.0" width="47" height="30"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                                        <state key="normal" title="Sign in"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTG-Ji-SDW" customClass="RTextfield" customModule="UpSignUp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="220.5" width="344" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cRadi">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cRadio">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borColo">
+                                        <color key="value" red="0.35953870170000002" green="0.80321881240000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borWii">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokémon FighterZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cd-Xc-imH">
+                                <rect key="frame" x="111" y="814" width="192" height="23"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squirtletle" translatesAutoresizingMaskIntoConstraints="NO" id="UrI-Hn-aul" customClass="RImageView" customModule="UpSignUp" customModuleProvider="target">
+                                <rect key="frame" x="174" y="731" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="L0m-Ty-MLW"/>
+                                    <constraint firstAttribute="height" constant="66" id="hQQ-ul-CwG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cRadio">
+                                        <real key="value" value="33"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3cd-Xc-imH" firstAttribute="centerX" secondItem="i4o-qL-hYS" secondAttribute="centerX" id="0CE-SR-EIa"/>
+                            <constraint firstItem="gy0-Ig-hMb" firstAttribute="leading" secondItem="leM-HL-lDG" secondAttribute="leading" constant="35" id="1Yw-O3-1LM"/>
+                            <constraint firstItem="leM-HL-lDG" firstAttribute="bottom" secondItem="3cd-Xc-imH" secondAttribute="bottom" constant="25" id="2II-yH-QWT"/>
+                            <constraint firstItem="TmX-BA-MD9" firstAttribute="top" secondItem="YTG-Ji-SDW" secondAttribute="bottom" constant="30" id="8Gi-h8-4ZB"/>
+                            <constraint firstItem="YTG-Ji-SDW" firstAttribute="leading" secondItem="leM-HL-lDG" secondAttribute="leading" constant="35" id="BLd-zp-Agm"/>
+                            <constraint firstItem="OLp-BH-fwe" firstAttribute="top" secondItem="gy0-Ig-hMb" secondAttribute="bottom" constant="23.5" id="DMZ-Vl-0U9"/>
+                            <constraint firstItem="kWw-YD-twS" firstAttribute="top" secondItem="leM-HL-lDG" secondAttribute="top" constant="70" id="FZx-KK-huw"/>
+                            <constraint firstItem="leM-HL-lDG" firstAttribute="trailing" secondItem="TmX-BA-MD9" secondAttribute="trailing" constant="110" id="IVG-Ol-fc5"/>
+                            <constraint firstItem="leM-HL-lDG" firstAttribute="trailing" secondItem="gy0-Ig-hMb" secondAttribute="trailing" constant="35" id="KaU-DD-gvs"/>
+                            <constraint firstItem="UrI-Hn-aul" firstAttribute="centerX" secondItem="i4o-qL-hYS" secondAttribute="centerX" id="NT7-S6-009"/>
+                            <constraint firstItem="OLp-BH-fwe" firstAttribute="leading" secondItem="leM-HL-lDG" secondAttribute="leading" constant="35" id="e0z-hw-B4c"/>
+                            <constraint firstItem="2Fy-ri-2Dm" firstAttribute="top" secondItem="TmX-BA-MD9" secondAttribute="bottom" constant="22.5" id="eH8-Oo-HSp"/>
+                            <constraint firstItem="DmC-wR-MYC" firstAttribute="top" secondItem="TmX-BA-MD9" secondAttribute="bottom" constant="22.5" id="ebN-3x-zN1"/>
+                            <constraint firstItem="gy0-Ig-hMb" firstAttribute="top" secondItem="kWw-YD-twS" secondAttribute="bottom" constant="5" id="h7U-gw-mdG"/>
+                            <constraint firstItem="YTG-Ji-SDW" firstAttribute="top" secondItem="OLp-BH-fwe" secondAttribute="bottom" constant="5" id="hXy-hg-ka9"/>
+                            <constraint firstItem="kWw-YD-twS" firstAttribute="leading" secondItem="leM-HL-lDG" secondAttribute="leading" constant="35" id="kri-Bx-de5"/>
+                            <constraint firstItem="DmC-wR-MYC" firstAttribute="centerX" secondItem="i4o-qL-hYS" secondAttribute="centerX" id="mhY-ev-KBY"/>
+                            <constraint firstItem="leM-HL-lDG" firstAttribute="trailing" secondItem="YTG-Ji-SDW" secondAttribute="trailing" constant="35" id="oCP-ZH-nBz"/>
+                            <constraint firstItem="3cd-Xc-imH" firstAttribute="top" secondItem="UrI-Hn-aul" secondAttribute="bottom" constant="17" id="thu-Cn-7Zx"/>
+                            <constraint firstItem="TmX-BA-MD9" firstAttribute="leading" secondItem="leM-HL-lDG" secondAttribute="leading" constant="110" id="zyh-Br-MMW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="leM-HL-lDG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anU-i2-dtv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="351.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="squirtletle" width="654" height="639"/>
+    </resources>
+</document>

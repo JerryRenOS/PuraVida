@@ -27,6 +27,7 @@
 		8FC772A324686F3400FB1B2A /* CrossDissolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC772A224686F3400FB1B2A /* CrossDissolving.swift */; };
 		8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */; };
 		8FDD81B0246A193200204E6D /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81AF246A193200204E6D /* ImageViewExtension.swift */; };
+		8FE44CD324BC0F290056A6D5 /* Impoto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE44CD224BC0F290056A6D5 /* Impoto.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8FC772A224686F3400FB1B2A /* CrossDissolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossDissolving.swift; sourceTree = "<group>"; };
 		8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		8FDD81AF246A193200204E6D /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		8FE44CD224BC0F290056A6D5 /* Impoto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Impoto.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */,
 				8FDD81AF246A193200204E6D /* ImageViewExtension.swift */,
 				8F923CFF246B9E1800DC2D04 /* SlidingInExtension.swift */,
+				8FE44CD224BC0F290056A6D5 /* Impoto.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE44CD324BC0F290056A6D5 /* Impoto.storyboard in Resources */,
 				8F3BC712245E19D00030748A /* LaunchScreen.storyboard in Resources */,
 				8F3BC70F245E19D00030748A /* Assets.xcassets in Resources */,
 				8F3BC70A245E19CD0030748A /* Main.storyboard in Resources */,
