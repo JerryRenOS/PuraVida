@@ -2,7 +2,7 @@
 //  ManifestationFuncs.swift
 //  AlphaRadioactive
 //
-//  Created by Jerry Ren on 5/22/20.
+//  Created by Jerry Ren on 5/26/20.
 //  Copyright © 2020 Jerry Ren. All rights reserved.
 //
 import SceneKit

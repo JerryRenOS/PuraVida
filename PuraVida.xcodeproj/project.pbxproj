@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F21B9AF2472392300644715 /* MayFlowerSeventeenth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21B9AE2472392300644715 /* MayFlowerSeventeenth.swift */; };
 		8F3BC703245E19CD0030748A /* AppD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC702245E19CD0030748A /* AppD.swift */; };
 		8F3BC705245E19CD0030748A /* SceneD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC704245E19CD0030748A /* SceneD.swift */; };
 		8F3BC707245E19CD0030748A /* EarthKitViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC706245E19CD0030748A /* EarthKitViewControl.swift */; };
@@ -15,7 +14,7 @@
 		8F3BC70D245E19CD0030748A /* PuraVida.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC70B245E19CD0030748A /* PuraVida.xcdatamodeld */; };
 		8F3BC70F245E19D00030748A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BC70E245E19D00030748A /* Assets.xcassets */; };
 		8F3BC712245E19D00030748A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BC710245E19D00030748A /* LaunchScreen.storyboard */; };
-		8F43209A2465BDEB007010FD /* NetworkDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4320992465BDEB007010FD /* NetworkDispatch.swift */; };
+		8F43209A2465BDEB007010FD /* NetworkFundamental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4320992465BDEB007010FD /* NetworkFundamental.swift */; };
 		8F43209C2465BE82007010FD /* GlobalStatics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43209B2465BE82007010FD /* GlobalStatics.swift */; };
 		8F52223C24674F220076EEA8 /* ExplorerViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52223B24674F220076EEA8 /* ExplorerViewControl.swift */; };
 		8F522240246756D50076EEA8 /* ExplorerTviCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52223F246756D50076EEA8 /* ExplorerTviCell.swift */; };
@@ -31,7 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F21B9AE2472392300644715 /* MayFlowerSeventeenth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayFlowerSeventeenth.swift; sourceTree = "<group>"; };
 		8F3BC6FF245E19CD0030748A /* PuraVida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuraVida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BC702245E19CD0030748A /* AppD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppD.swift; sourceTree = "<group>"; };
 		8F3BC704245E19CD0030748A /* SceneD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneD.swift; sourceTree = "<group>"; };
@@ -41,7 +39,7 @@
 		8F3BC70E245E19D00030748A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F3BC711245E19D00030748A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F3BC713245E19D00030748A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F4320992465BDEB007010FD /* NetworkDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatch.swift; sourceTree = "<group>"; };
+		8F4320992465BDEB007010FD /* NetworkFundamental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFundamental.swift; sourceTree = "<group>"; };
 		8F43209B2465BE82007010FD /* GlobalStatics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStatics.swift; sourceTree = "<group>"; };
 		8F52223B24674F220076EEA8 /* ExplorerViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerViewControl.swift; sourceTree = "<group>"; };
 		8F52223F246756D50076EEA8 /* ExplorerTviCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerTviCell.swift; sourceTree = "<group>"; };
@@ -105,8 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				8F52223E246754D90076EEA8 /* Default Delegates */,
-				8F4320992465BDEB007010FD /* NetworkDispatch.swift */,
-				8F21B9AE2472392300644715 /* MayFlowerSeventeenth.swift */,
+				8F4320992465BDEB007010FD /* NetworkFundamental.swift */,
 			);
 			path = "Distractions for now";
 			sourceTree = "<group>";
@@ -248,7 +245,7 @@
 				8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */,
 				8F3BC707245E19CD0030748A /* EarthKitViewControl.swift in Sources */,
 				8FC4E7CF246D9BF200CD94B9 /* PlanetARViewControl.swift in Sources */,
-				8F43209A2465BDEB007010FD /* NetworkDispatch.swift in Sources */,
+				8F43209A2465BDEB007010FD /* NetworkFundamental.swift in Sources */,
 				8F3BC70D245E19CD0030748A /* PuraVida.xcdatamodeld in Sources */,
 				8F923D00246B9E1800DC2D04 /* SlidingInExtension.swift in Sources */,
 				8F3BC703245E19CD0030748A /* AppD.swift in Sources */,
@@ -256,7 +253,6 @@
 				8F3BC705245E19CD0030748A /* SceneD.swift in Sources */,
 				8FDD81B0246A193200204E6D /* ImageViewExtension.swift in Sources */,
 				8F522240246756D50076EEA8 /* ExplorerTviCell.swift in Sources */,
-				8F21B9AF2472392300644715 /* MayFlowerSeventeenth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

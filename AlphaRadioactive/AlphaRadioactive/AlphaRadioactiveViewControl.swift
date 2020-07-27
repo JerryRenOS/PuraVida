@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  AlphaRadioactiveViewControl
 //
-//  Created by Jerry Ren on 5/16/20.
+//  Created by Jerry Ren on 5/17/20.
 //  Copyright © 2020 Jerry Ren. All rights reserved.
 //
 
