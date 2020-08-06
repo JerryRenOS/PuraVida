@@ -14,8 +14,6 @@ import CoreLocation
 // API_key from LocatorShipPuraVida on Google Cloud platform:
 // AIzaSyCXFHtBl4qVSFV1zS7Kyct0pbGFB8qE7hc
 
-
-
 // https://www.raywenderlich.com/7363101-google-maps-ios-sdk-tutorial-getting-started
 // useful link, keep following on the weekend to see where it goes
 
@@ -27,13 +25,10 @@ class LocatorshipViewController: UIViewController {
     // MARS: - 
     @IBOutlet weak var gmsMapView: GMSMapView!
        
-    
     var locationHandler: LocationManager?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         locatorManager.delegate = self
         locatorManager.requestWhenInUseAuthorization()
@@ -42,7 +37,6 @@ class LocatorshipViewController: UIViewController {
         
   //      goomPinPointer(lati: 21, longti: -157, title: "Honululu", snippet: "Volcanoe")
         
-
         // MARS: -
         
         //     settingUpLocationHandler()
@@ -62,10 +56,7 @@ class LocatorshipViewController: UIViewController {
         
         gooMarker.map = gooMapView
     }
-    
 }
-
-
 
 
 extension LocatorshipViewController {
@@ -125,7 +116,6 @@ extension LocatorshipViewController: CLLocationManagerDelegate {
 }
 
 
-
 // singleton pattern
 
 class LocationManager: NSObject, CLLocationManagerDelegate {
@@ -159,7 +149,4 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LocationError"), object: nil, userInfo: ["error": error])
     }
-    
-    
-    
 }
