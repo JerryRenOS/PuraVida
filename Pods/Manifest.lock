@@ -1,4 +1,5 @@
 PODS:
+  - Comets (0.3.1)
   - GoogleMaps (3.9.0):
     - GoogleMaps/Maps (= 3.9.0)
   - GoogleMaps/Base (3.9.0)
@@ -6,15 +7,18 @@ PODS:
     - GoogleMaps/Base
 
 DEPENDENCIES:
+  - Comets
   - GoogleMaps
 
 SPEC REPOS:
   trunk:
+    - Comets
     - GoogleMaps
 
 SPEC CHECKSUMS:
+  Comets: ff75eb4658d612af66073bf9fcf6e8bef274817b
   GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
 
-PODFILE CHECKSUM: bf6388c57f6f3e663ad474610a51eb9029c8cd15
+PODFILE CHECKSUM: a4302719fe65de0b6cf56fc85b2c50c49ece2b06
 
 COCOAPODS: 1.9.2
