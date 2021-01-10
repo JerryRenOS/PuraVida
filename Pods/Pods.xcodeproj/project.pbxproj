@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -19,13 +19,25 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2C5CC3B7C8A521AB8A8DDE8FF88D5A0D /* Pods-PuraVida-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C53AC4B727C0C701901BD6ED62C71D /* Pods-PuraVida-dummy.m */; };
-		42BD8A49D99C616972465D8D771E174D /* Pods-PuraVida-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 861B82354AE599C5311916541291D886 /* Pods-PuraVida-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B61E39D386247D9A05C20063829E522F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1F2CA79A476B101F9489AD5E5E8509F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		470BED8729EAE21FBBA4749496CAACCB /* Comets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F1E4EEB13C823439DBED8367550902 /* Comets-dummy.m */; };
+		97594905C4A483852FEE1088034338B7 /* Comet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29B5C84FBF9400343DA4E2D1C917D78 /* Comet.swift */; };
+		A903758702D8D39C7A5238FBCBCAEB4A /* Pods-PuraVida-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A7980B7A4F976CF2F7D939EF842DDF /* Pods-PuraVida-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8A3723CE5C1A47BB756FB1A146FC55B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D1EDB5E6A7FE6ADF6B548B9DAB7B7884 /* Comets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3381EFB55BE8C3A776F41A418B6EBEF /* Comets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E22BC883A043943533E930E45A8AB8B0 /* Pods-PuraVida-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BBB9D4443A0F573035BE72E13F48FC /* Pods-PuraVida-dummy.m */; };
+		EA2C2ED89432E80CE544180B8C278CD5 /* UIImage+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9724BE15CF1F6E95BEDE828F14724 /* UIImage+Rotate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A8A53BC983477A1D9E43B8535B2CD774 /* PBXContainerItemProxy */ = {
+		8D693C85318AEBDE2CDC8DD566016D89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 125B6FEA16CD0511AAB23164F8FDFACD;
+			remoteInfo = Comets;
+		};
+		F3FF031477B12E9D177619569DEB429F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,82 +47,179 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00C53AC4B727C0C701901BD6ED62C71D /* Pods-PuraVida-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PuraVida-dummy.m"; sourceTree = "<group>"; };
-		01AF48CF5646ADAB5D7324A8169AFF03 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		042F4D5DB8FFCB0E2F05C4E915AE4791 /* Pods-PuraVida-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PuraVida-acknowledgements.plist"; sourceTree = "<group>"; };
-		2508B54686852DD770E6EE3C76272393 /* Pods-PuraVida.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuraVida.debug.xcconfig"; sourceTree = "<group>"; };
+		030DF4D24FA847CA04AC499AE2E4A1FE /* Comets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Comets.release.xcconfig; sourceTree = "<group>"; };
+		0F9D0FAF9AA17763249A1FC851F35F8D /* Comets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Comets-Info.plist"; sourceTree = "<group>"; };
+		12955A310FDB57E573867F11A5F5DFC9 /* Pods-PuraVida-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuraVida-frameworks.sh"; sourceTree = "<group>"; };
+		2106D2E391B766F728678D6C93ABE467 /* Comets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Comets.framework; path = Comets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3400A52CB742181681F44DAC9DAF6C76 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		3419E45A060F55E006D4922D540471B3 /* Pods-PuraVida-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PuraVida-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3438FD9F006F407C95190A05AA66EB49 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		3705287BFCF00E94F5E335C135B1C6E9 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		394E01974B78AFBEC9E88C79663E37C3 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		3A62FB1358047DF0084569661DDBCA0F /* Pods_PuraVida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PuraVida.framework; path = "Pods-PuraVida.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AF4AF7C26D961F05101A5FC0ABE69D1 /* Pods-PuraVida.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PuraVida.modulemap"; sourceTree = "<group>"; };
-		65BF00A5AC378DEA25DABC036E2A9EE8 /* Pods-PuraVida.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuraVida.release.xcconfig"; sourceTree = "<group>"; };
-		6C903FA4EA4ADAA5FCCD4EBC0F8F74D4 /* Pods-PuraVida-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PuraVida-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6D14A544073B3C5FF2A140ABAC6C5DEC /* Pods-PuraVida-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuraVida-resources.sh"; sourceTree = "<group>"; };
-		861B82354AE599C5311916541291D886 /* Pods-PuraVida-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PuraVida-umbrella.h"; sourceTree = "<group>"; };
+		42784E3420FB3F3BF1CE4FBEABD00F13 /* Pods-PuraVida.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PuraVida.modulemap"; sourceTree = "<group>"; };
+		49322FB5339E60FE8E1A29D10D03D725 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		516796CDAF18CCCA529C0A68CDEEDC7A /* Comets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Comets.debug.xcconfig; sourceTree = "<group>"; };
+		6410A6B2649E90C0A2D3C397B4F37BE1 /* Comets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Comets-prefix.pch"; sourceTree = "<group>"; };
+		79D1D35D121E58C578B0C8DC3ED78C5B /* Pods-PuraVida.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuraVida.release.xcconfig"; sourceTree = "<group>"; };
+		8146955F667D884B143C86CD2374F437 /* Pods-PuraVida-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuraVida-resources.sh"; sourceTree = "<group>"; };
+		8494A478B384E61CFFC7790EC857E4EB /* Comets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Comets.modulemap; sourceTree = "<group>"; };
+		897B5AFBAD64661A1386660958D833DC /* Pods-PuraVida-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PuraVida-acknowledgements.plist"; sourceTree = "<group>"; };
+		90F1E4EEB13C823439DBED8367550902 /* Comets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Comets-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
-		C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
-		CCAF84BDED2FB6E96E950E18E0742136 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		E2309F84CDF17FF87E66D6CDB6B517AB /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		E2F4E7C722407F81715B67A5F9EC4FAD /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		F06AF257CE8D15F41FBB6474F2CDB535 /* Pods-PuraVida-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PuraVida-Info.plist"; sourceTree = "<group>"; };
+		A29B5C84FBF9400343DA4E2D1C917D78 /* Comet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comet.swift; path = Comets/Sources/Comet.swift; sourceTree = "<group>"; };
+		B3381EFB55BE8C3A776F41A418B6EBEF /* Comets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Comets-umbrella.h"; sourceTree = "<group>"; };
+		B5A7980B7A4F976CF2F7D939EF842DDF /* Pods-PuraVida-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PuraVida-umbrella.h"; sourceTree = "<group>"; };
+		BA2F892453F222F3D6EEEA268EDA34B8 /* Pods-PuraVida.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuraVida.debug.xcconfig"; sourceTree = "<group>"; };
+		BB95E66157C8E5BB3F420790A6CA82CC /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
+		D6BBB9D4443A0F573035BE72E13F48FC /* Pods-PuraVida-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PuraVida-dummy.m"; sourceTree = "<group>"; };
+		DC2096D748B41C76BD2A62A014E35E4A /* Pods-PuraVida-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PuraVida-Info.plist"; sourceTree = "<group>"; };
+		FAE9724BE15CF1F6E95BEDE828F14724 /* UIImage+Rotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Rotate.swift"; path = "Comets/Sources/UIImage+Rotate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5EF5DEC660329C53D4460532FB6FC7ED /* Frameworks */ = {
+		DA931C479A11122D1367D4C846980A0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B61E39D386247D9A05C20063829E522F /* Foundation.framework in Frameworks */,
+				B8A3723CE5C1A47BB756FB1A146FC55B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D30B09900A1B34F65BE36F00E69EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2CA79A476B101F9489AD5E5E8509F0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AEA1CF3E36FF8113F6FFD7526BE5F98 /* Frameworks */ = {
+		1822A53BFDF9230C11F0FA22A90512C4 /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				CCAF84BDED2FB6E96E950E18E0742136 /* GoogleMapsBase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		23258B9441300E23C80256BEEFD1F964 /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				5FCC553E82707BA26B1F6EDC00161B0D /* Base */,
-				387015716759109261086A8C0CA736F5 /* Maps */,
-				9601491F11C5653D98D1EB5DF2155DFE /* Support Files */,
+				7430E94D38B17E80A5377D2AE27E3832 /* Base */,
+				A727885A7A62F41711A9FF5EAF1BEC8B /* Maps */,
+				A69F6D5B4B6455A993A06A44B089A9BA /* Support Files */,
 			);
 			name = GoogleMaps;
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
-		387015716759109261086A8C0CA736F5 /* Maps */ = {
+		2544FD3D022C6CF644A30A4B2AFF3609 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F9621E38CA93CD5E47C3F28B4F0AF3DD /* Frameworks */,
-				E48211C21EA696EBC32B31525F5FFA67 /* Resources */,
+				3400A52CB742181681F44DAC9DAF6C76 /* GoogleMaps.framework */,
+				49322FB5339E60FE8E1A29D10D03D725 /* GoogleMapsCore.framework */,
 			);
-			name = Maps;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5FCC553E82707BA26B1F6EDC00161B0D /* Base */ = {
+		3427EE0E139758C868C31C54E8FBDC35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1AEA1CF3E36FF8113F6FFD7526BE5F98 /* Frameworks */,
+				3705287BFCF00E94F5E335C135B1C6E9 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		421599DD17E13F717BD90FEF221DE3C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8494A478B384E61CFFC7790EC857E4EB /* Comets.modulemap */,
+				90F1E4EEB13C823439DBED8367550902 /* Comets-dummy.m */,
+				0F9D0FAF9AA17763249A1FC851F35F8D /* Comets-Info.plist */,
+				6410A6B2649E90C0A2D3C397B4F37BE1 /* Comets-prefix.pch */,
+				B3381EFB55BE8C3A776F41A418B6EBEF /* Comets-umbrella.h */,
+				516796CDAF18CCCA529C0A68CDEEDC7A /* Comets.debug.xcconfig */,
+				030DF4D24FA847CA04AC499AE2E4A1FE /* Comets.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Comets";
+			sourceTree = "<group>";
+		};
+		42A5C8602C6B003346521FBD8D7878A7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87ABC39B1CC3EFD2F8D373D2799B6060 /* Pods-PuraVida */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6CF67C315801A89387DA02A0ED8DF863 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				394E01974B78AFBEC9E88C79663E37C3 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7430E94D38B17E80A5377D2AE27E3832 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3427EE0E139758C868C31C54E8FBDC35 /* Frameworks */,
 			);
 			name = Base;
 			sourceTree = "<group>";
 		};
-		9601491F11C5653D98D1EB5DF2155DFE /* Support Files */ = {
+		87ABC39B1CC3EFD2F8D373D2799B6060 /* Pods-PuraVida */ = {
 			isa = PBXGroup;
 			children = (
-				AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */,
-				C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */,
+				42784E3420FB3F3BF1CE4FBEABD00F13 /* Pods-PuraVida.modulemap */,
+				3419E45A060F55E006D4922D540471B3 /* Pods-PuraVida-acknowledgements.markdown */,
+				897B5AFBAD64661A1386660958D833DC /* Pods-PuraVida-acknowledgements.plist */,
+				D6BBB9D4443A0F573035BE72E13F48FC /* Pods-PuraVida-dummy.m */,
+				12955A310FDB57E573867F11A5F5DFC9 /* Pods-PuraVida-frameworks.sh */,
+				DC2096D748B41C76BD2A62A014E35E4A /* Pods-PuraVida-Info.plist */,
+				8146955F667D884B143C86CD2374F437 /* Pods-PuraVida-resources.sh */,
+				B5A7980B7A4F976CF2F7D939EF842DDF /* Pods-PuraVida-umbrella.h */,
+				BA2F892453F222F3D6EEEA268EDA34B8 /* Pods-PuraVida.debug.xcconfig */,
+				79D1D35D121E58C578B0C8DC3ED78C5B /* Pods-PuraVida.release.xcconfig */,
+			);
+			name = "Pods-PuraVida";
+			path = "Target Support Files/Pods-PuraVida";
+			sourceTree = "<group>";
+		};
+		95AE9E7C6809AF5494D79F327CBF7918 /* Comets */ = {
+			isa = PBXGroup;
+			children = (
+				A29B5C84FBF9400343DA4E2D1C917D78 /* Comet.swift */,
+				FAE9724BE15CF1F6E95BEDE828F14724 /* UIImage+Rotate.swift */,
+				421599DD17E13F717BD90FEF221DE3C7 /* Support Files */,
+			);
+			name = Comets;
+			path = Comets;
+			sourceTree = "<group>";
+		};
+		A69F6D5B4B6455A993A06A44B089A9BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB95E66157C8E5BB3F420790A6CA82CC /* GoogleMaps.debug.xcconfig */,
+				3438FD9F006F407C95190A05AA66EB49 /* GoogleMaps.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		A727885A7A62F41711A9FF5EAF1BEC8B /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				2544FD3D022C6CF644A30A4B2AFF3609 /* Frameworks */,
+				6CF67C315801A89387DA02A0ED8DF863 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		B6C1959D73F785E93ED5DB0C3845B78D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95AE9E7C6809AF5494D79F327CBF7918 /* Comets */,
+				1822A53BFDF9230C11F0FA22A90512C4 /* GoogleMaps */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -121,40 +230,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CBB3E07CED5681E68C419B3F6131F5FB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3A62FB1358047DF0084569661DDBCA0F /* Pods_PuraVida.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				DF3634087891871FA7B65CC4A8E6DB71 /* Pods */,
-				CBB3E07CED5681E68C419B3F6131F5FB /* Products */,
-				E7B08A5E2D8716706B965F61BF35854A /* Targets Support Files */,
+				B6C1959D73F785E93ED5DB0C3845B78D /* Pods */,
+				E25B96647CA84E17A9C173695F9619E0 /* Products */,
+				42A5C8602C6B003346521FBD8D7878A7 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		CF82A2892BCFB06E7F764C94BD523F81 /* Pods-PuraVida */ = {
-			isa = PBXGroup;
-			children = (
-				5AF4AF7C26D961F05101A5FC0ABE69D1 /* Pods-PuraVida.modulemap */,
-				6C903FA4EA4ADAA5FCCD4EBC0F8F74D4 /* Pods-PuraVida-acknowledgements.markdown */,
-				042F4D5DB8FFCB0E2F05C4E915AE4791 /* Pods-PuraVida-acknowledgements.plist */,
-				00C53AC4B727C0C701901BD6ED62C71D /* Pods-PuraVida-dummy.m */,
-				F06AF257CE8D15F41FBB6474F2CDB535 /* Pods-PuraVida-Info.plist */,
-				6D14A544073B3C5FF2A140ABAC6C5DEC /* Pods-PuraVida-resources.sh */,
-				861B82354AE599C5311916541291D886 /* Pods-PuraVida-umbrella.h */,
-				2508B54686852DD770E6EE3C76272393 /* Pods-PuraVida.debug.xcconfig */,
-				65BF00A5AC378DEA25DABC036E2A9EE8 /* Pods-PuraVida.release.xcconfig */,
-			);
-			name = "Pods-PuraVida";
-			path = "Target Support Files/Pods-PuraVida";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -165,66 +249,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF3634087891871FA7B65CC4A8E6DB71 /* Pods */ = {
+		E25B96647CA84E17A9C173695F9619E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23258B9441300E23C80256BEEFD1F964 /* GoogleMaps */,
+				2106D2E391B766F728678D6C93ABE467 /* Comets.framework */,
+				3A62FB1358047DF0084569661DDBCA0F /* Pods_PuraVida.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E48211C21EA696EBC32B31525F5FFA67 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E2309F84CDF17FF87E66D6CDB6B517AB /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		E7B08A5E2D8716706B965F61BF35854A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CF82A2892BCFB06E7F764C94BD523F81 /* Pods-PuraVida */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F9621E38CA93CD5E47C3F28B4F0AF3DD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				01AF48CF5646ADAB5D7324A8169AFF03 /* GoogleMaps.framework */,
-				E2F4E7C722407F81715B67A5F9EC4FAD /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		083999F757AA7A1B47CB7492D372ACB0 /* Headers */ = {
+		68C9DAA5B1D152617CE0250E4832E6A6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42BD8A49D99C616972465D8D771E174D /* Pods-PuraVida-umbrella.h in Headers */,
+				D1EDB5E6A7FE6ADF6B548B9DAB7B7884 /* Comets-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71C162BEB71A85A2E5DA00A86D338992 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A903758702D8D39C7A5238FBCBCAEB4A /* Pods-PuraVida-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		727837876F92E5D623F970A0724CEE33 /* Pods-PuraVida */ = {
+		125B6FEA16CD0511AAB23164F8FDFACD /* Comets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C7CD5B716FD54A778FECB8A940BA988 /* Build configuration list for PBXNativeTarget "Pods-PuraVida" */;
+			buildConfigurationList = 88DB1107863A5FF1554BB4A0F4E2BDBE /* Build configuration list for PBXNativeTarget "Comets" */;
 			buildPhases = (
-				083999F757AA7A1B47CB7492D372ACB0 /* Headers */,
-				CFD6F6D0D7AEF8844ED283F549755D56 /* Sources */,
-				5EF5DEC660329C53D4460532FB6FC7ED /* Frameworks */,
-				CA45E3A8E5DD3B883DB084C5E30DF6A1 /* Resources */,
+				68C9DAA5B1D152617CE0250E4832E6A6 /* Headers */,
+				62DA4097F7D69FF28E6B6CA3B715032D /* Sources */,
+				E0D30B09900A1B34F65BE36F00E69EAE /* Frameworks */,
+				AB5260D8621A902C0B730217B590DE42 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				62023EE99FCC89850C066EE9FE543785 /* PBXTargetDependency */,
+			);
+			name = Comets;
+			productName = Comets;
+			productReference = 2106D2E391B766F728678D6C93ABE467 /* Comets.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		727837876F92E5D623F970A0724CEE33 /* Pods-PuraVida */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BCE846CF932511BF06C78FFF7FC67B8 /* Build configuration list for PBXNativeTarget "Pods-PuraVida" */;
+			buildPhases = (
+				71C162BEB71A85A2E5DA00A86D338992 /* Headers */,
+				662A18725291BC19F51ED11311DA7E30 /* Sources */,
+				DA931C479A11122D1367D4C846980A0A /* Frameworks */,
+				983312D70B1E784DAE7F4BCCD0395918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF9A3C1735A974C49C46B3C2C8A7767F /* PBXTargetDependency */,
+				A0E787CB692BE4A844104091CC51D7A3 /* PBXTargetDependency */,
 			);
 			name = "Pods-PuraVida";
 			productName = "Pods-PuraVida";
@@ -241,7 +328,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -249,10 +336,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = CBB3E07CED5681E68C419B3F6131F5FB /* Products */;
+			productRefGroup = E25B96647CA84E17A9C173695F9619E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				125B6FEA16CD0511AAB23164F8FDFACD /* Comets */,
 				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
 				727837876F92E5D623F970A0724CEE33 /* Pods-PuraVida */,
 			);
@@ -260,7 +348,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CA45E3A8E5DD3B883DB084C5E30DF6A1 /* Resources */ = {
+		983312D70B1E784DAE7F4BCCD0395918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB5260D8621A902C0B730217B590DE42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,67 +365,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CFD6F6D0D7AEF8844ED283F549755D56 /* Sources */ = {
+		62DA4097F7D69FF28E6B6CA3B715032D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C5CC3B7C8A521AB8A8DDE8FF88D5A0D /* Pods-PuraVida-dummy.m in Sources */,
+				97594905C4A483852FEE1088034338B7 /* Comet.swift in Sources */,
+				470BED8729EAE21FBBA4749496CAACCB /* Comets-dummy.m in Sources */,
+				EA2C2ED89432E80CE544180B8C278CD5 /* UIImage+Rotate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		662A18725291BC19F51ED11311DA7E30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22BC883A043943533E930E45A8AB8B0 /* Pods-PuraVida-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62023EE99FCC89850C066EE9FE543785 /* PBXTargetDependency */ = {
+		A0E787CB692BE4A844104091CC51D7A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleMaps;
 			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
-			targetProxy = A8A53BC983477A1D9E43B8535B2CD774 /* PBXContainerItemProxy */;
+			targetProxy = F3FF031477B12E9D177619569DEB429F /* PBXContainerItemProxy */;
+		};
+		CF9A3C1735A974C49C46B3C2C8A7767F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Comets;
+			target = 125B6FEA16CD0511AAB23164F8FDFACD /* Comets */;
+			targetProxy = 8D693C85318AEBDE2CDC8DD566016D89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1E207E55F1E5FA04EE7486E0B8B74B7A /* Debug */ = {
+		2761B4C63F8115F6B06E18577483485D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2508B54686852DD770E6EE3C76272393 /* Pods-PuraVida.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PuraVida/Pods-PuraVida-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PuraVida/Pods-PuraVida.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2DE1779E974A24DBCD558BF0100F2644 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65BF00A5AC378DEA25DABC036E2A9EE8 /* Pods-PuraVida.release.xcconfig */;
+			baseConfigurationReference = 79D1D35D121E58C578B0C8DC3ED78C5B /* Pods-PuraVida.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -367,9 +440,45 @@
 			};
 			name = Release;
 		};
+		79D80F4FD9BECAC24FB1F88B88802414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 030DF4D24FA847CA04AC499AE2E4A1FE /* Comets.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Comets/Comets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Comets/Comets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Comets/Comets.modulemap";
+				PRODUCT_MODULE_NAME = Comets;
+				PRODUCT_NAME = Comets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8CE5BA3EF4F6FABF028CE30772ECDA11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */;
+			baseConfigurationReference = 3438FD9F006F407C95190A05AA66EB49 /* GoogleMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -448,9 +557,44 @@
 			};
 			name = Debug;
 		};
+		DC70794B293841F1F66295FC12E4580C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516796CDAF18CCCA529C0A68CDEEDC7A /* Comets.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Comets/Comets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Comets/Comets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Comets/Comets.modulemap";
+				PRODUCT_MODULE_NAME = Comets;
+				PRODUCT_NAME = Comets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E1E452060D51DF935547186CE54B26CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */;
+			baseConfigurationReference = BB95E66157C8E5BB3F420790A6CA82CC /* GoogleMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -524,9 +668,56 @@
 			};
 			name = Release;
 		};
+		EF899F0D86EAC056C7F72A150424FE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2F892453F222F3D6EEEA268EDA34B8 /* Pods-PuraVida.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PuraVida/Pods-PuraVida-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PuraVida/Pods-PuraVida.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0BCE846CF932511BF06C78FFF7FC67B8 /* Build configuration list for PBXNativeTarget "Pods-PuraVida" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF899F0D86EAC056C7F72A150424FE4C /* Debug */,
+				2761B4C63F8115F6B06E18577483485D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -545,11 +736,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C7CD5B716FD54A778FECB8A940BA988 /* Build configuration list for PBXNativeTarget "Pods-PuraVida" */ = {
+		88DB1107863A5FF1554BB4A0F4E2BDBE /* Build configuration list for PBXNativeTarget "Comets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E207E55F1E5FA04EE7486E0B8B74B7A /* Debug */,
-				2DE1779E974A24DBCD558BF0100F2644 /* Release */,
+				DC70794B293841F1F66295FC12E4580C /* Debug */,
+				79D80F4FD9BECAC24FB1F88B88802414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
