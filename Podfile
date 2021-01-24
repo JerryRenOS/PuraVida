@@ -6,7 +6,8 @@ target 'PuraVida' do
   use_frameworks!
 
   # Pods for PuraVida
-
+  
+  pod "Comets"
 
   pod 'GoogleMaps'
 

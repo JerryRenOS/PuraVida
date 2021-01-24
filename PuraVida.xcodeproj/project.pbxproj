@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6E14ED42430BE20F4A05FA47 /* Pods_PuraVida.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9BF3AEE13EB268BAD7AA8 /* Pods_PuraVida.framework */; };
 		8F0031C224DBB72600A4546F /* TxtFEffec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0031C124DBB72500A4546F /* TxtFEffec.swift */; };
+		8F21E03924E34C8200BF0B08 /* CometicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21E03824E34C8200BF0B08 /* CometicaViewController.swift */; };
 		8F3BC703245E19CD0030748A /* AppD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC702245E19CD0030748A /* AppD.swift */; };
 		8F3BC705245E19CD0030748A /* SceneD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC704245E19CD0030748A /* SceneD.swift */; };
 		8F3BC707245E19CD0030748A /* EarthKitViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BC706245E19CD0030748A /* EarthKitViewControl.swift */; };
@@ -29,13 +30,13 @@
 		8FDD81AE246A13CD00204E6D /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */; };
 		8FDD81B0246A193200204E6D /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD81AF246A193200204E6D /* ImageViewExtension.swift */; };
 		8FE107E824D464F30016B0EB /* LocatorshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE107E724D464F30016B0EB /* LocatorshipViewController.swift */; };
-		8FE107EA24D493A30016B0EB /* GooMapStructuredProtoCalled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE107E924D493A30016B0EB /* GooMapStructuredProtoCalled.swift */; };
 		8FE44CD324BC0F290056A6D5 /* Impoto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE44CD224BC0F290056A6D5 /* Impoto.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71A9BF3AEE13EB268BAD7AA8 /* Pods_PuraVida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuraVida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0031C124DBB72500A4546F /* TxtFEffec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtFEffec.swift; sourceTree = "<group>"; };
+		8F21E03824E34C8200BF0B08 /* CometicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CometicaViewController.swift; sourceTree = "<group>"; };
 		8F3BC6FF245E19CD0030748A /* PuraVida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuraVida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BC702245E19CD0030748A /* AppD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppD.swift; sourceTree = "<group>"; };
 		8F3BC704245E19CD0030748A /* SceneD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneD.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		8FDD81AD246A13CD00204E6D /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		8FDD81AF246A193200204E6D /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		8FE107E724D464F30016B0EB /* LocatorshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatorshipViewController.swift; sourceTree = "<group>"; };
-		8FE107E924D493A30016B0EB /* GooMapStructuredProtoCalled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooMapStructuredProtoCalled.swift; sourceTree = "<group>"; };
 		8FE44CD224BC0F290056A6D5 /* Impoto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Impoto.storyboard; sourceTree = "<group>"; };
 		BDBBBCD7C575849EA11A9ED2 /* Pods-PuraVida.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuraVida.release.xcconfig"; path = "Target Support Files/Pods-PuraVida/Pods-PuraVida.release.xcconfig"; sourceTree = "<group>"; };
 		D9ABF995BF13B2C3D84A54F1 /* Pods-PuraVida.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuraVida.debug.xcconfig"; path = "Target Support Files/Pods-PuraVida/Pods-PuraVida.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +170,7 @@
 				8FC7729F24686D9D00FB1B2A /* MappyViewControl.swift */,
 				8FC4E7CE246D9BF200CD94B9 /* PlanetARViewControl.swift */,
 				8F52223B24674F220076EEA8 /* ExplorerViewControl.swift */,
+				8F21E03824E34C8200BF0B08 /* CometicaViewController.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -201,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				8FE107E724D464F30016B0EB /* LocatorshipViewController.swift */,
-				8FE107E924D493A30016B0EB /* GooMapStructuredProtoCalled.swift */,
 			);
 			path = Locatorship;
 			sourceTree = "<group>";
@@ -218,6 +218,7 @@
 				8F3BC6FC245E19CD0030748A /* Frameworks */,
 				8F3BC6FD245E19CD0030748A /* Resources */,
 				8A39C05D65D21568587A7AE1 /* [CP] Copy Pods Resources */,
+				5C434EBC4DC72D6185D1E045 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +277,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5C434EBC4DC72D6185D1E045 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuraVida/Pods-PuraVida-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuraVida/Pods-PuraVida-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuraVida/Pods-PuraVida-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8A39C05D65D21568587A7AE1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,7 +341,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FC772A024686D9D00FB1B2A /* MappyViewControl.swift in Sources */,
-				8FE107EA24D493A30016B0EB /* GooMapStructuredProtoCalled.swift in Sources */,
 				8F43209C2465BE82007010FD /* GlobalStatics.swift in Sources */,
 				8F52223C24674F220076EEA8 /* ExplorerViewControl.swift in Sources */,
 				8F845FDB247DEAA700B79C76 /* 3DSceneKitPlaya.swift in Sources */,
@@ -332,6 +349,7 @@
 				8F3BC707245E19CD0030748A /* EarthKitViewControl.swift in Sources */,
 				8FC4E7CF246D9BF200CD94B9 /* PlanetARViewControl.swift in Sources */,
 				8F43209A2465BDEB007010FD /* NetworkFundamental.swift in Sources */,
+				8F21E03924E34C8200BF0B08 /* CometicaViewController.swift in Sources */,
 				8F3BC70D245E19CD0030748A /* PuraVida.xcdatamodeld in Sources */,
 				8F923D00246B9E1800DC2D04 /* SlidingInExtension.swift in Sources */,
 				8FE107E824D464F30016B0EB /* LocatorshipViewController.swift in Sources */,
