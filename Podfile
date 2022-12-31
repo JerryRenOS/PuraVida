@@ -8,10 +8,7 @@ target 'PuraVida' do
   # Pods for PuraVida
   
   pod "Comets"
-
   pod 'GoogleMaps'
-
-#  pod 'GooglePlaces'
-
+  pod 'GooglePlaces'
 
 end
